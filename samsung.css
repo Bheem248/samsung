@@ -1,0 +1,367 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    /* border:1px solid gray; */
+}
+
+/* Top-Menu Image */
+.smg-img{
+    width:250px;
+    margin-top: 2px;
+    padding-right: 80px;
+    align-items: center;
+    
+}
+
+.smg-nav:hover .smg-img a:hover{
+    background-color: transparent;
+}
+
+/* Shop Link */
+
+.smg-nav{
+     background-color: white;
+     color:black;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     display: flex;  
+     text-align: center; 
+     width: 100%;
+     height: 80px;
+     align-items: center;
+
+}
+
+.smg-nav a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+    color:black;
+    padding: 10px;
+    margin: 1px;
+    vertical-align: middle;
+}
+
+/* .smg-nav .dropdown .shop{
+    justify-content: center;
+    align-items: center;
+} */
+
+.smg-nav a:hover{
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+}
+
+.row{
+    display:none;
+}
+
+.column{
+    float: left;
+    width:200px;
+    height: 200px;
+    padding: 10px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.column a{
+    float:none;
+    display: block;
+}
+
+.dropdown:hover .row{
+    display: block;
+    position: absolute;
+    z-index: 50;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: -100px;
+    border:1px solid black;
+}
+
+.dropdown:hover .row .column h5{
+     font-weight: 800;
+     font-size: 13px;
+     text-align: start;
+     padding-left: 10px;
+     margin-bottom: 10px;
+}
+
+.dropdown:hover .row .column a{
+    color: gray;
+    font-weight: lighter;
+    text-align: start;
+}
+.dropdown:hover .row .column a:hover{
+    font-weight: 600;
+    background-color: transparent;
+    color:black;
+}
+
+
+/* Mobile Link */
+
+.row_one{
+    display: none;
+}
+
+.dropdown_one:hover .row_one{
+    display: block;
+    position: absolute;
+    z-index: 50;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: -100px;
+    border:1px solid black;
+}
+
+.dropdown_one:hover .row_one .column_one {
+    border-left: 1px solid black;
+}
+
+
+.dropdown_one:hover .row_one .column_one h5{
+    font-weight: 800;
+    font-size: 13px;
+    text-align: start;
+    padding-left: 10px;
+    
+}
+
+.dropdown_one:hover .row_one .column_one a{
+    color: gray;
+    background-color: transparent;
+    font-weight: lighter;
+}
+
+.dropdown_one:hover .row_one .column_one a:hover{
+    color: black;
+    font-weight: 600;
+}
+
+.column_one{
+    float: left;
+    /* margin-top: 10px; */
+    width:400px;
+    height:550px;
+    padding:10px;
+    font-size:13px;
+}
+
+.column_one a{
+    display: block;
+}
+
+.column_one a img{
+    float:left;
+    width:100px;
+    height:100px;
+    padding: 17px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    overflow: hidden;
+    border: none;
+    background-color: rgb(247, 246, 246);
+    border-radius: 10px;
+}
+
+
+
+.column_one .img-row{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.column_one a img{
+  transition: transform 0.50s ease;  /* Smooth zoom transition */
+  max-width: 100%;
+  max-height: 100%;
+} 
+
+.column_one a img:hover{
+    transform: scale(1.09); /* Scale the image by 1.5x */ 
+}
+
+
+/* Second COntainer */
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+}
+.container1 .head2 h2{
+    font-size: 30px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.container1 .containerlinks{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container1 .containerlinks a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color:black;
+    padding: 10px;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.container1 .container1_imgs{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.column_two,.column_three,.column_four{
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.column_two img{
+    border-radius: 10px;
+    position: relative;
+    z-index: 20;
+    transition: transform 0.90s ease;
+    
+}
+
+.column_two .galaxys24{
+    position: absolute;
+    z-index: 40;
+    padding-top: 35%;
+    padding-left: 17%;
+    width: 50%;
+}
+
+.galaxys24 .btn1{
+    font-size: 15px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    border-radius: 13px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 10px;
+    margin-left: 8%;
+    display: none;
+    overflow: hidden;
+}
+
+
+.column_two:hover .galaxys24 .btn1{
+    display: block;
+    transform: scale(1);
+}
+
+.column_two:hover img{
+    transform: scale(1.03);
+}
+
+/* ================================================ */
+.column_three img{
+    border-radius: 10px;
+    margin-bottom: 19px;
+    position: relative;
+    z-index: 20;
+}
+
+.column_three_one .galaxys10{
+  position: absolute;
+  z-index: 40;
+  padding-top: 15%;
+  font-size: 13px;
+  font-weight: 500;
+  padding-left: 20px;
+}
+
+.galaxys10 .btn2{
+    padding: 8px 25px;
+    background-color: black;
+    color:white;
+    border-radius: 15px;
+    margin-top: 9px;
+    margin-left: 30%;
+}
+
+.galaxys10 .btn2{
+    display: none;
+}
+
+.column_three_one:hover .galaxys10 .btn2{
+    display: block;
+    transform: scale(1.01);
+}
+
+.column_three_one img{
+    transition: transform 0.50s ease;
+}
+
+.column_three_one:hover img{
+    transform: scale(1.01);
+}
+
+/* =========== */
+
+
+.column_three_two .galaxyb4{
+    position: absolute;
+    z-index: 40;
+    padding-top: 15%;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 1.3%;
+}
+
+.galaxyb4 .btn3{
+    background-color: black;
+    color: white;
+    padding: 8px 25px;
+    margin-top: 4%;
+    margin-left: 30%;
+    border-radius: 15px;
+    display: none;
+}
+
+
+.column_three_two:hover .galaxyb4 .btn3{
+    display: block;
+}
+
+.column_three_two img{
+    transition: transform 0.50s ease;
+}
+
+.column_three_two:hover img{
+    transform: scale(1.03);
+}
+
+.column_four img{
+    border-radius: 10px;
+    margin-bottom: 19px;
+    position: relative;
+    z-index: 20;
+}
+
+
+
+
